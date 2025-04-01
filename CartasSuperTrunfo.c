@@ -45,8 +45,10 @@ int main() {
     capital2 = pouplaçao2 / pib2;
 
     printf("Escolha uma carta A ou B: \n");
-    scanf("")
+    scanf("%s", estado1);
+    scanf("%s", estado2);
 
+   printf("");
 
     
     // Cadastro das Cartas: 
