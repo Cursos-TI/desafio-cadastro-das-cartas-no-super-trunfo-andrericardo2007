@@ -19,7 +19,7 @@ int main() {
     int pontos1 = 50;
     float densidade1;
     float capital1;
-
+    float soma1;
 
     //Carta 2
     char estado2[4];
@@ -30,6 +30,7 @@ int main() {
     int pontos2 = 30;
     float densidade2;
     float capital2;
+    float soma2;
 
     //Densidade da carta 1
     densidade1 = populacao1 / kilomestros1;
@@ -39,10 +40,15 @@ int main() {
 
     //PIB per Capita carta 1
     capital1 = populacao1 / pib1;
-
+   
     
     //PIB per Capita carta 2
     capital2 = populacao2 / pib2;
+
+   //Soma de todos os valores
+   soma1 = populacao1 + kilomestros1 + pib1 + densidade1 + capital1 + pontos1;
+
+   soma2 = populacao2 + kilomestros2 + pib2 + densidade2 + capital2 + pontos2;
 
     printf("Carta 1 \n");
     printf("Escolha um estado: \n");
@@ -61,6 +67,8 @@ int main() {
     scanf("%f", &densidade1);
     printf("Pib per capta: \n");
     scanf("%f", &capital1);
+    printf("valor total da carta: \n");
+    scanf("%f", soma1);
    
     printf("Carta 2 \n");
     printf("Escolha um estado: \n");
@@ -79,7 +87,9 @@ int main() {
     scanf("%f", &densidade2);
     printf("Pib per capta: \n");
     scanf("%f", &capital2);
-
+    printf("valor total da carta: \n");
+    scanf("%f", soma2);
+    
     
     
     // Cadastro das Cartas: 
