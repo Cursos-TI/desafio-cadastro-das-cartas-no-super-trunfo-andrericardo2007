@@ -1,14 +1,9 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    
 
     //Carta 1
     char estado1[5];
@@ -90,15 +85,39 @@ int main() {
     printf("valor total da carta: \n");
     scanf("%f", soma2);
     
-    
-    
-    // Cadastro das Cartas: 
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    if( soma2 > soma1 ){
+        printf(" carta 2 ganhou \n");
+     }else {
+        printf("carta 1 ganhou \n");
 
+        if( populacao2 > populacao1 ){
+            printf(" carta 2 ganhou \n");
+         }else {
+            printf("carta 1 ganhou \n");    
+     
+            if( kilomestros2 > kilomestros1 ){
+                printf(" carta 2 ganhou \n");
+             }else {
+                printf("carta 1 ganhou \n");
+            
+                if( densidade2 > densidade2 ){
+                    printf(" carta 2 ganhou \n");
+                 }else {
+                    printf("carta 1 ganhou \n");    
+
+                    if( capital2 > capital1 ){
+                        printf(" carta 2 ganhou \n");
+                     }else {
+                        printf("carta 1 ganhou \n");   
+                        
+                        if( pontos2 > pontos1 ){
+                            printf(" carta 2 ganhou \n");
+                         }else {
+                            printf("carta 1 ganhou \n");
+
+                            if( pib2 > pib1 ){
+                                printf(" carta 2 ganhou \n");
+                             }else {
+                                printf("carta 1 ganhou \n");
     return 0;
 }
